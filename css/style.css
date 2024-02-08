@@ -1,0 +1,315 @@
+/* Estilos Globais */
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #f6f3f6;
+    color: #6a6969;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Adicione um espaço para o h2 */
+.name {
+    margin-right: 310px;
+}
+
+/* Efeito especial para o h2 */
+.name {
+    background-image: linear-gradient(45deg, #ff66b2, #00dbf3);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block; /* Isso é necessário para aplicar o gradiente ao texto */
+    transition: background-position 0.5s ease-in-out;
+}
+
+.name:hover {
+    background-position: 100% 0; /* Move o gradiente para criar o efeito especial */
+}
+
+
+/* Barra de Navegação */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #6a6969;
+    margin: 0 20px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.github-logo .logo-image, .logo-react,
+ .logo-imagee {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    text-align: center;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    margin: 10px; /* Adiciona espaçamento entre os projetos */
+}
+
+.project img {
+    width: 100%; /* Garante que a imagem preencha completamente o contêiner */
+    border-radius: 5px; /* Adiciona borda arredondada à imagem */
+}
+.logo-LinkedIn{
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.center{
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f6f3f6;
+    padding: 20px;
+    color: #242323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Adicione uma margem superior para separar o cabeçalho do conteúdo */
+.header-content {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* Perfil e Imagem */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 100px; /* Aumenta o espaçamento entre a imagem e o texto */
+    border: 5px solid;
+    border-image: linear-gradient(
+        45deg,
+        #eb04a9 0%,
+        #00dbf3 25%,
+        #00dbf3 50%,
+        #00dbf3 75%,
+        #eb04a9 100%
+    );
+    border-image-slice: 1;
+    transition: border-image 0.3s ease;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .profile-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-me {
+        margin-bottom: 20px;
+    }
+}
+
+.profile-container:hover .profile-image {
+    border-image: linear-gradient(
+        45deg,
+        #eb04a9 0%,
+        #00dbf3 25%,
+        #00dbf3 75%,
+        #eb04a9 100%
+    );
+}
+
+.profile-container:hover .circle-overlay::before,
+.profile-container:hover .circle-overlay {
+    opacity: 1;
+}
+
+
+h2 {
+    font-weight: bold;
+    background-image: linear-gradient( #eb04a9, #00dbf3);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+    text-align: center; /* Adiciona esta linha para alinhar o h2 ao centro */
+}
+.about-me {
+    margin: 20px 0; /* Ajuste os valores conforme necessário */
+}
+
+.about-me p {
+    color: #6a6969;
+    margin-bottom: 10px; /* Adiciona espaçamento inferior */
+}
+
+/* Seções Específicas */
+.about-me, .skills, .project {
+    max-width: 800px;
+    margin: 0 auto 20px; /* Adiciona espaçamento inferior */
+}
+
+/* Barra de Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #6a6969;
+    margin: 0 20px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff0080;
+}
+
+
+/* Logos GitHub e LinkedIn */
+.github-logo .logo-image, .logo-imagee, .logo-react{
+    width: 40px;
+    height: auto;
+}
+
+/* Adicione este trecho ao seu CSS existente */
+
+/* Adicione este trecho ao seu CSS existente */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Adicione um espaçamento superior */
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #00dbf3;
+    margin: 0 20px; /* Adicione espaçamento horizontal entre os ícones */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00dbf3;
+}
+
+
+
+
+
+
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #00dbf3;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+/* Adiciona a animação de rotação */
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Imagens de tecnologias */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-java, .logo-Css, .logo-Javascript, .logo-html, .logo-GitHub, .logo-servidor-sql, .logo-react {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(86, 83, 83);
+    transition: transform 0.3s ease-in-out;
+    animation: rotateAnimation 8s;
+}
+
+/* Efeito de rotação nas imagens */
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+.social-icons a:hover {
+    color: #00dbf3;
+}
+
+/* Adicione este trecho ao seu CSS existente */
+
+.footer {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos ao longo do espaço disponível */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    background-color: #f6f3f6; /* Adicione a cor de fundo desejada */
+    padding: 10px; /* Adicione o preenchimento desejado */
+}
+
+.contact-info {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
+/* Adicione este trecho ao seu CSS existente */
+
+.name2 {
+    background-image: linear-gradient(45deg, #ff66b2, #00dbf3);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block; /* Isso é necessário para aplicar o gradiente ao texto */
+    transition: background-position 0.5s ease-in-out;
+}
+
+.name2:hover {
+    background-position: 100% 0; /* Move o gradiente para criar o efeito especial ao passar o mouse */
+}
+
+
+
